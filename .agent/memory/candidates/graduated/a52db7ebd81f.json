@@ -1,0 +1,43 @@
+{
+  "id": "a52db7ebd81f",
+  "key": "manual_a52db7",
+  "name": "manual_a52db7",
+  "claim": "Always address the user as Pandu and myself as Chitti",
+  "conditions": [
+    "address",
+    "always",
+    "chitti",
+    "myself",
+    "pandu",
+    "user"
+  ],
+  "evidence_ids": [
+    "2026-04-22T12:27:05.542051"
+  ],
+  "cluster_size": 1,
+  "canonical_salience": 8.0,
+  "staged_at": "2026-04-22T12:27:05.542051",
+  "status": "accepted",
+  "decisions": [
+    {
+      "ts": "2026-04-22T12:27:05.542051",
+      "action": "staged",
+      "reviewer": "learn"
+    },
+    {
+      "ts": "2026-04-22T12:27:05.587024",
+      "action": "graduated",
+      "reviewer": "learn.py",
+      "notes": "User preference stated at start of session",
+      "provisional": false,
+      "evidence_snapshot": [
+        "2026-04-22T12:27:05.542051"
+      ],
+      "lessons_sha": "8da41784c0fa"
+    }
+  ],
+  "rejection_count": 0,
+  "accepted_at": "2026-04-22T12:27:05.587020",
+  "reviewer": "learn.py",
+  "rationale": "User preference stated at start of session"
+}

@@ -1,0 +1,221 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1777352375840,
+  "projectRoot": "/Volumes/storage/claude/free-claude-code",
+  "techStack": {
+    "languages": [
+      {
+        "name": "Python",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "pyproject.toml"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "fastapi",
+        "version": null,
+        "category": "backend"
+      },
+      {
+        "name": "pytest",
+        "version": null,
+        "category": "testing"
+      }
+    ],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": "pytest",
+    "lintCommand": "ruff check",
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "tests"
+    ],
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "__pycache__": {
+      "path": "__pycache__",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1777352375828,
+      "keyFiles": [
+        "server.cpython-314.pyc"
+      ]
+    },
+    "agent_workspace": {
+      "path": "agent_workspace",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1777352375829,
+      "keyFiles": [
+        "sessions.json"
+      ]
+    },
+    "api": {
+      "path": "api",
+      "purpose": "API routes",
+      "fileCount": 12,
+      "lastAccessed": 1777352375830,
+      "keyFiles": [
+        "__init__.py",
+        "app.py",
+        "command_utils.py",
+        "dependencies.py",
+        "detection.py"
+      ]
+    },
+    "cli": {
+      "path": "cli",
+      "purpose": null,
+      "fileCount": 5,
+      "lastAccessed": 1777352375832,
+      "keyFiles": [
+        "__init__.py",
+        "entrypoints.py",
+        "manager.py",
+        "process_registry.py",
+        "session.py"
+      ]
+    },
+    "config": {
+      "path": "config",
+      "purpose": "Configuration files",
+      "fileCount": 7,
+      "lastAccessed": 1777352375832,
+      "keyFiles": [
+        "__init__.py",
+        "constants.py",
+        "logging_config.py",
+        "nim.py",
+        "provider_catalog.py"
+      ]
+    },
+    "core": {
+      "path": "core",
+      "purpose": null,
+      "fileCount": 2,
+      "lastAccessed": 1777352375832,
+      "keyFiles": [
+        "__init__.py",
+        "rate_limit.py"
+      ]
+    },
+    "messaging": {
+      "path": "messaging",
+      "purpose": null,
+      "fileCount": 15,
+      "lastAccessed": 1777352375833,
+      "keyFiles": [
+        "__init__.py",
+        "cli_event_constants.py",
+        "command_dispatcher.py",
+        "commands.py",
+        "event_parser.py"
+      ]
+    },
+    "providers": {
+      "path": "providers",
+      "purpose": null,
+      "fileCount": 9,
+      "lastAccessed": 1777352375833,
+      "keyFiles": [
+        "__init__.py",
+        "anthropic_messages.py",
+        "base.py",
+        "defaults.py",
+        "error_mapping.py"
+      ]
+    },
+    "smoke": {
+      "path": "smoke",
+      "purpose": null,
+      "fileCount": 5,
+      "lastAccessed": 1777352375834,
+      "keyFiles": [
+        "README.md",
+        "__init__.py",
+        "capabilities.py",
+        "conftest.py",
+        "features.py"
+      ]
+    },
+    "tests": {
+      "path": "tests",
+      "purpose": "Test files",
+      "fileCount": 4,
+      "lastAccessed": 1777352375834,
+      "keyFiles": [
+        "__init__.py",
+        "conftest.py",
+        "provider_request_mocks.py",
+        "stream_contract.py"
+      ]
+    },
+    "api/models": {
+      "path": "api/models",
+      "purpose": "Data models",
+      "fileCount": 3,
+      "lastAccessed": 1777352375835,
+      "keyFiles": [
+        "__init__.py",
+        "anthropic.py",
+        "responses.py"
+      ]
+    },
+    "smoke/lib": {
+      "path": "smoke/lib",
+      "purpose": "Library code",
+      "fileCount": 9,
+      "lastAccessed": 1777352375837,
+      "keyFiles": [
+        "__init__.py",
+        "child_process.py",
+        "config.py"
+      ]
+    },
+    "tests/api": {
+      "path": "tests/api",
+      "purpose": "API routes",
+      "fileCount": 18,
+      "lastAccessed": 1777352375840,
+      "keyFiles": [
+        "test_anthropic_request_passthrough.py",
+        "test_api.py",
+        "test_app_lifespan_and_errors.py"
+      ]
+    },
+    "tests/config": {
+      "path": "tests/config",
+      "purpose": "Configuration files",
+      "fileCount": 2,
+      "lastAccessed": 1777352375840,
+      "keyFiles": [
+        "test_config.py",
+        "test_logging_config.py"
+      ]
+    }
+  },
+  "hotPaths": [],
+  "userDirectives": []
+}
