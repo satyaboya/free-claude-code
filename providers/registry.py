@@ -10,6 +10,7 @@ from contextlib import suppress
 import httpx
 from loguru import logger
 
+from config.model_rankings import get_model_rank, get_tier_for_model
 from config.provider_catalog import (
     PROVIDER_CATALOG,
     SUPPORTED_PROVIDER_IDS,
@@ -279,7 +280,14 @@ class ProviderRegistry:
                     supports_thinking=info.supports_thinking,
                 )
                 for info in sorted(
-                    provider_infos.values(), key=lambda item: item.model_id
+                    provider_infos.values(),
+                    key=lambda item: (
+                        # Sort by rank (higher rank = better model = comes first)
+                        # Unranked models (rank 0) appear last
+                        -get_model_rank(provider_id, item.model_id, get_tier_for_model(provider_id, item.model_id) or "sonnet"),
+                        # Then alphabetically as tiebreaker
+                        item.model_id,
+                    ),
                 )
             )
         return tuple(infos)
