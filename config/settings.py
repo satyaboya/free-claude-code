@@ -148,7 +148,8 @@ class Settings(BaseSettings):
     # ==================== Model ====================
     # All Claude model requests are mapped to this single model (fallback)
     # Format: provider_type/model/name
-    model: str = "nvidia_nim/z-ai/glm4.7"
+    # Using best free model by capability (ranked #1 in Opus tier)
+    model: str = "nvidia_nim/deepseek-ai/deepseek-v4-pro"
 
     # Per-model overrides (optional, falls back to MODEL)
     # Each can use a different provider
